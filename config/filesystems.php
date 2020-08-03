@@ -48,6 +48,21 @@ return [
             'root' => storage_path('app'),
         ],
 
+        'file' => [
+            'driver' => 'local',
+            'root' => 'file'
+        ],
+
+        'sliders' => [
+            'driver' => 'local',
+            'root' => 'file/sliders'
+        ],
+
+        'news' => [
+            'driver' => 'local',
+            'root' => 'file/news'
+        ],
+
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
@@ -62,7 +77,6 @@ return [
             'region' => env('AWS_DEFAULT_REGION'),
             'bucket' => env('AWS_BUCKET'),
             'url' => env('AWS_URL'),
-            'endpoint' => env('AWS_ENDPOINT'),
         ],
 
     ],
